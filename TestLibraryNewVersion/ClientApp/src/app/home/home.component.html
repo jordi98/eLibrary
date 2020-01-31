@@ -1,0 +1,27 @@
+<h1>Books</h1>
+
+<p *ngIf="!books"><em>Loading...</em></p>
+<table class='table' *ngIf="books">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Genre</th>
+      <th>Year</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let b of books">
+      <td>{{ b.id }}</td>
+      <td>{{ b.title }}</td>
+      <td>{{ b.author }}</td>
+      <td>{{ b.genre }}</td>
+      <td>{{ b.year }}</td>
+      <td>
+        <a [routerLink]="" (click)="take(b.id)">Take</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+<h1>Books</h1>
+<p *ngIf="!books"><em>Loading...</em></p>
+<p> <a [routerLink]="['/add-book']">Create New</a></p>
+<table class="table" *ngIf="books">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Genre</th>
+      <th>Year</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let b of books">
+      <td>{{ b.title }} </td>
+      <td>{{ b.author }} </td>
+      <td>{{ b.genre }} </td>
+      <td>{{ b.year }} </td>
+      <td>
+        <a [routerLink]="['/books/edit/', b.id]">Edit</a> |
+        <a [routerLink]="" (click)="delete(b.id)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
