@@ -33,8 +33,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\user\adduser.component.ts" />
+    <None Remove="ClientApp\src\app\user\user.service.ts" />
+    <None Remove="ClientApp\src\app\user\user.ts" />
+    <None Remove="ClientApp\src\app\user\users.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Library.BLL\Library.BLL.csproj" />
     <ProjectReference Include="..\Library.DAL\Library.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\user\adduser.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\user\user.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\user\user.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\user\users.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

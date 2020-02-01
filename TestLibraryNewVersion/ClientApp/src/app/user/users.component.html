@@ -1,0 +1,28 @@
+<h1>Users</h1>
+<p *ngIf="!users"><em>Loading...</em></p>
+<p> <a [routerLink]="['/add-user']">Create New</a></p>
+<table class="table" *ngIf="users">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>Role</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of users">
+      <td>{{ u.id }} </td>
+      <td>{{ u.userName }} </td>
+      <td>{{ u.email }} </td>
+      <td>{{ u.phoneNumber }} </td>
+      <td>{{ u.role }}</td>
+      <td>
+        <a [routerLink]="['/users/edit/', u.id]">Edit</a> |
+        <a [routerLink]="" (click)="delete(u.id)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
