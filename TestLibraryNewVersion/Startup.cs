@@ -1,3 +1,4 @@
+using Library.BLL.Identity;
 using Library.BLL.Interfaces;
 using Library.BLL.Services;
 using Library.DAL.Context;
@@ -82,6 +83,9 @@ namespace TestLibraryNewVersion
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+
+            SeedUsersWithRoles.Initialize(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider);
+            app.UseAuthentication();
         }
     }
 }
