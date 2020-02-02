@@ -11,31 +11,31 @@ namespace TestLibraryNewVersion.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly IUserService _service;
-        public UsersController(IUserService service)
+        private readonly IUserService _userService;
+        public UsersController(IUserService userService)
         {
-            _service = service;
+            _userService = userService;
         }
 
         // GET: api/Users
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ApplicationUser>>> GetUsers()
         {
-            return await _service.GetUsers();
+            return await _userService.GetUsers();
         }
 
         // GET: api/Users/search{name}
         [HttpGet("search/{name?}")]
         public async Task<ActionResult<IEnumerable<ApplicationUser>>> GetUsers(string name)
         {
-            return await _service.GetUser(name);
+            return await _userService.GetUser(name);
         }
 
-        // GET: api/Books/5
+        // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ApplicationUser>> GetUser(string id)
         {
-            var user = await _service.GetUserById(id);
+            var user = await _userService.GetUserById(id);
 
             if (user == null)
             {
@@ -56,7 +56,7 @@ namespace TestLibraryNewVersion.Controllers
 
             try
             {
-                await _service.UpdateUser(user);
+                await _userService.UpdateUser(user);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -70,7 +70,7 @@ namespace TestLibraryNewVersion.Controllers
         [HttpPost]
         public async Task<ActionResult<ApplicationUser>> PostUser(ApplicationUser user)
         {
-            await _service.CreateUser(user);
+            await _userService.CreateUser(user);
 
             return CreatedAtAction("GetUser", new { id = user.Id }, user);
         }
@@ -79,13 +79,13 @@ namespace TestLibraryNewVersion.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<ApplicationUser>> DeleteUser(string id)
         {
-            var user = await _service.GetUserById(id);
+            var user = await _userService.GetUserById(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            await _service.DeleteUser(user);
+            await _userService.DeleteUser(user);
 
             return user;
         }

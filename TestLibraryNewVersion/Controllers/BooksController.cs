@@ -11,24 +11,24 @@ namespace TestLibraryNewVersion.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly IBookService _service;
-        public BooksController(IBookService service)
+        private readonly IBookService _bookService;
+        public BooksController(IBookService bookService)
         {
-            _service = service;
+            _bookService = bookService;
         }
 
         // GET: api/Books
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
         {
-            return await _service.GetBooks();
+            return await _bookService.GetBooks();
         }
 
         // GET: api/Books/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Book>> GetBook(int id)
         {
-            var book = await _service.GetBook(id);
+            var book = await _bookService.GetBook(id);
 
             if (book == null)
             {
@@ -39,8 +39,6 @@ namespace TestLibraryNewVersion.Controllers
         }
 
         // PUT: api/Books/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBook(int id, Book book)
         {
@@ -51,7 +49,7 @@ namespace TestLibraryNewVersion.Controllers
 
             try
             {
-                await _service.UpdateBook(book);
+                await _bookService.UpdateBook(book);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -62,12 +60,10 @@ namespace TestLibraryNewVersion.Controllers
         }
 
         // POST: api/Books
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(Book book)
         {
-            await _service.CreateBook(book);
+            await _bookService.CreateBook(book);
 
             return CreatedAtAction("GetBook", new { id = book.Id }, book);
         }
@@ -76,13 +72,13 @@ namespace TestLibraryNewVersion.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<Book>> DeleteBook(int id)
         {
-            var book = await _service.GetBook(id);
+            var book = await _bookService.GetBook(id);
             if (book == null)
             {
                 return NotFound();
             }
 
-            await _service.DeleteBook(book);
+            await _bookService.DeleteBook(book);
 
             return book;
         }
