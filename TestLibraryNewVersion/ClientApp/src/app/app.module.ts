@@ -17,6 +17,8 @@ import { BookService } from './book/book.service';
 import { UserService } from './user/user.service';
 import { UsersComponent } from './user/users.component';
 import { AddUserComponent } from './user/adduser.component';
+import { RegisterComponent } from './register/register.component';
+import { AuthenticationService } from './auth/authentication.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { AddUserComponent } from './user/adduser.component';
         EditBookComponent,
         AdminPageComponent,
         UsersComponent,
-        AddUserComponent
+        AddUserComponent,
+        RegisterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -45,10 +48,11 @@ import { AddUserComponent } from './user/adduser.component';
         { path: 'books/edit/:id', component: EditBookComponent },
         { path: 'admin-page', component: AdminPageComponent },
         { path: 'users', component: UsersComponent },
-        { path: 'add-user', component: AddUserComponent }
+        { path: 'add-user', component: AddUserComponent },
+        { path: 'register', component: RegisterComponent }
     ])
     ],
-    providers: [BookService, UserService],
+    providers: [BookService, UserService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
