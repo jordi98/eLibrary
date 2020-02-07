@@ -13,6 +13,17 @@ namespace Library.BLL.Services
         {
             _userManager = userManager;
         }
+        public async Task<ApplicationUser> FindByName(string name)
+        {
+            var user = await _userManager.FindByNameAsync(name);
+            return user;
+        }
+        public async Task<bool> CheckPassword(ApplicationUser user, string password)
+        {
+            if (!await _userManager.CheckPasswordAsync(user, password))
+                return false;
+            return true;
+        }
         public async Task<IdentityResult> RegisterUser(UserRegisterDTO userRegister)
         {
             ApplicationUser user = new ApplicationUser()
