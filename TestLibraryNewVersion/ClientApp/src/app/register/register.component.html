@@ -1,0 +1,33 @@
+<div class="col-md-6 col-md-offset-3">
+  <h2>Register</h2>
+  <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+      <div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !fullname.valid }">
+      <label for="fullname">Full name</label>
+      <input type="text" class="form-control" name="fullname" [(ngModel)]="model.name" #fullname="ngModel" required />
+      <div *ngIf="f.submitted && !fullname.valid" class="help-block">Name is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !phoneNumber.valid }">
+      <label for="phoneNumber">Phone number</label>
+      <input type="text" class="form-control" name="phoneNumber" [(ngModel)]="model.phoneNumber" #phoneNumber="ngModel" required />
+      <div *ngIf="f.submitted && !phoneNumber.valid" class="help-block">Phone number is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+      <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !confirmPassword.valid }">
+      <label for="confirmPassword">Password Confirm</label>
+      <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="model.confirmPassword" #confirmPassword="ngModel" required />
+      <div *ngIf="f.submitted && !confirmPassword.valid" class="help-block">Password confirm is required</div>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary">Register</button>
+    </div>
+  </form>
+</div>
