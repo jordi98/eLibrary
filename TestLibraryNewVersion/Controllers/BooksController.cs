@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Library.DAL.Models;
 using Library.BLL.Interfaces;
+using Microsoft.Extensions.Logging;
 
 namespace TestLibraryNewVersion.Controllers
 {
@@ -12,8 +13,10 @@ namespace TestLibraryNewVersion.Controllers
     public class BooksController : ControllerBase
     {
         private readonly IBookService _bookService;
-        public BooksController(IBookService bookService)
+        private readonly ILogger _logger;
+        public BooksController(IBookService bookService, ILogger<BooksController> logger)
         {
+            _logger = logger;
             _bookService = bookService;
         }
 
@@ -21,6 +24,8 @@ namespace TestLibraryNewVersion.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
         {
+            _logger.LogInformation("Get Books");
+            _logger.LogError("Error Get Books");
             return await _bookService.GetBooks();
         }
 
@@ -32,6 +37,7 @@ namespace TestLibraryNewVersion.Controllers
 
             if (book == null)
             {
+                _logger.LogError("Book with {id} is not found!", id);
                 return NotFound();
             }
 
@@ -44,11 +50,13 @@ namespace TestLibraryNewVersion.Controllers
         {
             if (id != book.Id)
             {
+                _logger.LogError("Book with {id} is not found!", id);
                 return BadRequest();
             }
 
             try
             {
+                _logger.LogInformation("Editing book with id {id}", id);
                 await _bookService.UpdateBook(book);
             }
             catch (DbUpdateConcurrencyException)

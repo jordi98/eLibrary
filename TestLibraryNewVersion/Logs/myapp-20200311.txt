@@ -1,0 +1,21 @@
+03/11/2020 21:57:27 [Information]  App starting up
+03/11/2020 21:57:30 [Warning]  User "619e8ecd-e2f6-4949-9de0-a4603328da29" is already in role "Admin".
+03/11/2020 21:57:30 [Warning]  User "219bfb58-be00-498a-9b11-aace35148830" is already in role "User".
+03/11/2020 21:57:31 [Warning]  User "73b38b9d-275d-4070-8d2b-d82bfb06aba5" validation failed: "InvalidUserName".
+03/11/2020 21:57:31 [Warning]  User "73b38b9d-275d-4070-8d2b-d82bfb06aba5" validation failed: "InvalidUserName".
+03/11/2020 21:57:38 [Error]  Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+03/11/2020 21:57:56 [Information]  HTTP "GET" "/" responded 200 in 26643.5319 ms
+03/11/2020 21:57:58 [Information]  HTTP "GET" "/styles.css" responded 200 in 2036.5019 ms
+03/11/2020 21:57:58 [Information]  HTTP "GET" "/polyfills.js" responded 200 in 2043.4270 ms
+03/11/2020 21:57:58 [Information]  HTTP "GET" "/runtime.js" responded 200 in 2047.2158 ms
+03/11/2020 21:57:58 [Information]  HTTP "GET" "/main.js" responded 200 in 2061.8220 ms
+03/11/2020 21:57:58 [Information]  HTTP "GET" "/vendor.js" responded 200 in 2097.9194 ms
+03/11/2020 21:57:59 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Get Books
+03/11/2020 21:57:59 [Error] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Error Get Books
+03/11/2020 21:57:59 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) HTTP "GET" "/api/Books" responded 200 in 170.7151 ms
+03/11/2020 21:58:00 [Information]  HTTP "GET" "/runtime.js.map" responded 200 in 2009.6964 ms
+03/11/2020 21:58:00 [Information]  HTTP "GET" "/polyfills.js.map" responded 200 in 2013.2807 ms
+03/11/2020 21:58:01 [Information]  HTTP "GET" "/main.js.map" responded 200 in 2021.5253 ms
+03/11/2020 21:58:01 [Information]  HTTP "GET" "/vendor.js.map" responded 200 in 2063.5616 ms
+03/11/2020 21:58:01 [Information]  HTTP "GET" "/sockjs-node/info?t=1583956679059" responded 200 in 2016.2060 ms

@@ -1,0 +1,22 @@
+04/26/2020 20:51:15 [Information]  App starting up
+04/26/2020 20:51:22 [Warning]  User "619e8ecd-e2f6-4949-9de0-a4603328da29" is already in role "Admin".
+04/26/2020 20:51:22 [Warning]  User "219bfb58-be00-498a-9b11-aace35148830" is already in role "User".
+04/26/2020 20:51:22 [Warning]  User "345fce24-b1ea-4cda-89ad-cc7b82f6cb9d" validation failed: "InvalidUserName".
+04/26/2020 20:51:22 [Warning]  User "345fce24-b1ea-4cda-89ad-cc7b82f6cb9d" validation failed: "InvalidUserName".
+04/26/2020 20:51:39 [Error]  Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+04/26/2020 20:52:03 [Information]  HTTP "GET" "/" responded 200 in 42491.3410 ms
+04/26/2020 20:52:05 [Information]  HTTP "GET" "/runtime.js" responded 200 in 2103.9609 ms
+04/26/2020 20:52:06 [Information]  HTTP "GET" "/polyfills.js" responded 200 in 2275.9449 ms
+04/26/2020 20:52:06 [Information]  HTTP "GET" "/styles.css" responded 200 in 2275.9418 ms
+04/26/2020 20:52:06 [Information]  HTTP "GET" "/main.js" responded 200 in 2275.9217 ms
+04/26/2020 20:52:06 [Information]  HTTP "GET" "/vendor.js" responded 200 in 2353.5797 ms
+04/26/2020 20:52:07 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Get Books
+04/26/2020 20:52:07 [Error] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Error Get Books
+04/26/2020 20:52:07 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) HTTP "GET" "/api/Books" responded 200 in 201.2951 ms
+04/26/2020 20:52:08 [Information]  HTTP "GET" "/runtime.js.map" responded 200 in 2018.2970 ms
+04/26/2020 20:52:08 [Information]  HTTP "GET" "/polyfills.js.map" responded 200 in 2021.3368 ms
+04/26/2020 20:52:09 [Information]  HTTP "GET" "/main.js.map" responded 200 in 2009.8781 ms
+04/26/2020 20:52:09 [Information]  HTTP "GET" "/sockjs-node/info?t=1587923527663" responded 200 in 2012.6265 ms
+04/26/2020 20:52:09 [Information]  HTTP "GET" "/vendor.js.map" responded 200 in 2057.1088 ms
+04/26/2020 20:53:16 [Information]  HTTP "GET" "/sockjs-node/991/efoozqzj/websocket" responded 101 in 67042.4971 ms

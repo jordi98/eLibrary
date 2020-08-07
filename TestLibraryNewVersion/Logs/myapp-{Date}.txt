@@ -1,0 +1,63 @@
+03/11/2020 21:39:42 [Information] [] App starting up
+03/11/2020 21:39:46 [Warning] [] User "619e8ecd-e2f6-4949-9de0-a4603328da29" is already in role "Admin".
+03/11/2020 21:39:46 [Warning] [] User "219bfb58-be00-498a-9b11-aace35148830" is already in role "User".
+03/11/2020 21:39:46 [Warning] [] User "3ff18064-edb7-4e07-9cc1-7d9a2a7e69b9" validation failed: "InvalidUserName".
+03/11/2020 21:39:46 [Warning] [] User "3ff18064-edb7-4e07-9cc1-7d9a2a7e69b9" validation failed: "InvalidUserName".
+03/11/2020 21:39:52 [Error] [] Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+03/11/2020 21:40:10 [Information] [] HTTP "GET" "/" responded 200 in 25083.2235 ms
+03/11/2020 21:40:12 [Information] [] HTTP "GET" "/runtime.js" responded 200 in 2050.5602 ms
+03/11/2020 21:40:12 [Information] [] HTTP "GET" "/styles.css" responded 200 in 2051.7563 ms
+03/11/2020 21:40:12 [Information] [] HTTP "GET" "/main.js" responded 200 in 2051.6840 ms
+03/11/2020 21:40:12 [Information] [] HTTP "GET" "/polyfills.js" responded 200 in 2063.6022 ms
+03/11/2020 21:40:12 [Information] [] HTTP "GET" "/vendor.js" responded 200 in 2105.6336 ms
+03/11/2020 21:40:13 [Information] [TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion)] Get Books
+03/11/2020 21:40:13 [Error] [TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion)] Error Get Books
+03/11/2020 21:40:13 [Information] [TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion)] HTTP "GET" "/api/Books" responded 200 in 144.9368 ms
+03/11/2020 21:40:14 [Information] [] HTTP "GET" "/runtime.js.map" responded 200 in 2008.6240 ms
+03/11/2020 21:40:14 [Information] [] HTTP "GET" "/polyfills.js.map" responded 200 in 2008.7569 ms
+03/11/2020 21:40:15 [Information] [] HTTP "GET" "/main.js.map" responded 200 in 2037.1022 ms
+03/11/2020 21:40:15 [Information] [] HTTP "GET" "/vendor.js.map" responded 200 in 2069.1161 ms
+03/11/2020 21:40:15 [Information] [] HTTP "GET" "/sockjs-node/info?t=1583955613112" responded 200 in 2008.3203 ms
+03/11/2020 21:41:47 [Information]  App starting up
+03/11/2020 21:41:50 [Warning]  User "619e8ecd-e2f6-4949-9de0-a4603328da29" is already in role "Admin".
+03/11/2020 21:41:50 [Warning]  User "219bfb58-be00-498a-9b11-aace35148830" is already in role "User".
+03/11/2020 21:41:50 [Warning]  User "a4afac38-bd9d-47b8-8060-62a13b35d590" validation failed: "InvalidUserName".
+03/11/2020 21:41:50 [Warning]  User "a4afac38-bd9d-47b8-8060-62a13b35d590" validation failed: "InvalidUserName".
+03/11/2020 21:41:57 [Error]  Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+03/11/2020 21:42:16 [Information]  HTTP "GET" "/" responded 200 in 27255.2033 ms
+03/11/2020 21:42:18 [Information]  HTTP "GET" "/runtime.js" responded 200 in 2044.6688 ms
+03/11/2020 21:42:18 [Information]  HTTP "GET" "/styles.css" responded 200 in 2051.3353 ms
+03/11/2020 21:42:18 [Information]  HTTP "GET" "/main.js" responded 200 in 2051.3413 ms
+03/11/2020 21:42:18 [Information]  HTTP "GET" "/polyfills.js" responded 200 in 2062.7653 ms
+03/11/2020 21:42:18 [Information]  HTTP "GET" "/vendor.js" responded 200 in 2105.1391 ms
+03/11/2020 21:42:19 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Get Books
+03/11/2020 21:42:19 [Error] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Error Get Books
+03/11/2020 21:42:19 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) HTTP "GET" "/api/Books" responded 200 in 194.2427 ms
+03/11/2020 21:42:20 [Information]  HTTP "GET" "/runtime.js.map" responded 200 in 2009.8351 ms
+03/11/2020 21:42:20 [Information]  HTTP "GET" "/polyfills.js.map" responded 200 in 2007.7776 ms
+03/11/2020 21:42:21 [Information]  HTTP "GET" "/main.js.map" responded 200 in 2023.6733 ms
+03/11/2020 21:42:21 [Information]  HTTP "GET" "/vendor.js.map" responded 200 in 2058.0062 ms
+03/11/2020 21:42:21 [Information]  HTTP "GET" "/sockjs-node/info?t=1583955739542" responded 200 in 2014.2583 ms
+03/11/2020 21:52:45 [Information]  App starting up
+03/11/2020 21:52:49 [Warning]  User "619e8ecd-e2f6-4949-9de0-a4603328da29" is already in role "Admin".
+03/11/2020 21:52:49 [Warning]  User "219bfb58-be00-498a-9b11-aace35148830" is already in role "User".
+03/11/2020 21:52:49 [Warning]  User "23ac2370-0f38-458c-906d-e0402e9ecfe3" validation failed: "InvalidUserName".
+03/11/2020 21:52:49 [Warning]  User "23ac2370-0f38-458c-906d-e0402e9ecfe3" validation failed: "InvalidUserName".
+03/11/2020 21:52:55 [Error]  Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+03/11/2020 21:53:13 [Information]  HTTP "GET" "/" responded 200 in 25275.6372 ms
+03/11/2020 21:53:15 [Information]  HTTP "GET" "/runtime.js" responded 200 in 2075.0531 ms
+03/11/2020 21:53:15 [Information]  HTTP "GET" "/main.js" responded 200 in 2089.4573 ms
+03/11/2020 21:53:15 [Information]  HTTP "GET" "/polyfills.js" responded 200 in 2106.7453 ms
+03/11/2020 21:53:15 [Information]  HTTP "GET" "/styles.css" responded 200 in 2106.7543 ms
+03/11/2020 21:53:15 [Information]  HTTP "GET" "/vendor.js" responded 200 in 2141.3183 ms
+03/11/2020 21:53:16 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Get Books
+03/11/2020 21:53:16 [Error] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) Error Get Books
+03/11/2020 21:53:16 [Information] TestLibraryNewVersion.Controllers.BooksController.GetBooks (TestLibraryNewVersion) HTTP "GET" "/api/Books" responded 200 in 152.7181 ms
+03/11/2020 21:53:17 [Information]  HTTP "GET" "/runtime.js.map" responded 200 in 2015.2576 ms
+03/11/2020 21:53:17 [Information]  HTTP "GET" "/polyfills.js.map" responded 200 in 2008.7032 ms
+03/11/2020 21:53:18 [Information]  HTTP "GET" "/main.js.map" responded 200 in 2020.8678 ms
+03/11/2020 21:53:18 [Information]  HTTP "GET" "/vendor.js.map" responded 200 in 2093.2573 ms
+03/11/2020 21:53:18 [Information]  HTTP "GET" "/sockjs-node/info?t=1583956396292" responded 200 in 2036.6686 ms
